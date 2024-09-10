@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./logoaco.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        
+        <nav class="flex justify-between items-center bg-cyan-200 h-20">
+        
+            <div>
+                <a href="./index.html">
+                    <img src="./logoaco.png" alt="" class="rounded-full w-16">
+                </a>
+            </div>
+        
+            <div class="ml-40 max-[507px]:ml-0">
+                <ol class="flex space-x-7 font-semibold text-xl max-md:hidden">
+                    <li class="hover:text-blue-700" id="ipl">IPL</li>
+                    <li class="hover:text-blue-700" id="finance">Finance</li>
+                    <li class="hover:text-blue-700" id="politics">Politics</li>
+                    <li class="hover:text-blue-700 max-[870px]:hidden" id="technology">Technology</li>
+                </ol>
+            </div>
+
+            <div>
+                <input type="search" name="" id="searchInput" placeholder="e.g. Sceince" class="py-1 pl-2 border border-blue-300 rounded-md max-[360px]:w-32">
+                <button type="submit" class="bg-blue-700 px-5 py-1 text-white font-semibold rounded-md" id="searchBtn">Search</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="flex flex-wrap justify-center items-center mt-10 w-[100%]" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="card-template">
+        
+        <div class="w-[360px] border min-h-[400px] overflow-hidden rounded-b-lg hover:-translate-y-2 transition-all mt-10 max-md:w-[300px] mx-5" id="card">
+            
+            <div>
+                <img src="" alt="" class="w-full h-[180px] object-cover" id="cardImg">
+            </div>
+            
+            <div class="font-bold p-3 text-xl h-[76px]">
+                <h1 class="overflow-hidden text-ellipsis" style="display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp:2;" id="cardHeading"></h1>
+            </div>
+            
+            <div class="p-3" id="cardDate">
+                <p>
+                    <span id="cardScouce" class="text-red-600 font-semibold"></span>
+                    <span id="CardDate"></span>
+                </p>         
+            </div>
+            
+            <div class="p-3 font-medium h-[180px]">
+                <h1 class="overflow-hidden text-ellipsis" style="display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp:6;" id="cardDespription"></h1>
+            </div>
+        </div>
+    </template>
+    <footer></footer>
+</body>
+
+<script src="./script.js"></script>
+</html>
