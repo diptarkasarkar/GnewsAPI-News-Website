@@ -8,4 +8,4 @@ This project is built using the following technologies: HTML, JavaScript, Tailwi
 
 ## Demo
 
-Explore the live demo of the News App: [Live Demo]()
+Explore the live demo of the News App: [Live Demo](https://news-website-main.onrender.com)
