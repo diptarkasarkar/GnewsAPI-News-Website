@@ -1,4 +1,4 @@
-const apikey = 'ff6a67682fa67b591975f53041385e42';
+const apikey = '75d0856155aee5cd5d112fd231db2735';
 const ipl = document.querySelector('#ipl')
 const finance = document.querySelector('#finance')
 const politics = document.querySelector('#politics')
